@@ -38,6 +38,11 @@ html, body {
     margin-left: 72px;
 }
 
+.navbuttons {
+    position: fixed;
+    top: 242px;
+}
+
 .remotebtn {
     width: 42px;
     height: 42px;
