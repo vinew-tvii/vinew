@@ -1,0 +1,58 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 854px;
+    height: 800px;
+    background-image: url("background.png");
+}
+
+#mii-info {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(50,50,50,0.5);
+    border: 2px solid rgba(50,50,50,0.8);
+    height: 64px;
+}
+
+#mii-info #mii-image {
+    width: 64px;
+    height: 64px;
+    background-color: hotpink;
+    border-radius: 10px;
+    display: block;
+}
+
+#remote {
+    padding: 8px;
+    border: solid 1px blue;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#mii-info #mii-name {
+    font-size: 18px;
+    display: block;
+    color: white;
+    margin-top: -46px;
+    margin-left: 72px;
+}
+
+.remotebtn {
+    width: 42px;
+    height: 42px;
+}
+
+#miiverse img {
+    height: 42px;
+    width: 42px;
+}
+
+#miiverse {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
