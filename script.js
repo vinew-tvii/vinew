@@ -1,4 +1,4 @@
-const vino_polyfill = {
+/*const vino_polyfill = {
     ir_enableCodeset: (arg) => {
         if (arg == 1) window.vinoPolyfillIrEnabled = true;
         else if (arg == 0) window.vinoPolyfillIrEnabled = false;
@@ -20,7 +20,7 @@ const vino_polyfill = {
 
 if (!globalThis.vino) {
     globalThis.vino = vino_polyfill
-}
+}*/
 
 var buttonmap = {
     "power": 0,
@@ -41,11 +41,13 @@ var buttonmap = {
     "input": 52
 }
 
-Array.from(document.getElementsByClassName("remotebtn")).forEach(button => {
-    button.addEventListener("click", (event)=>{
-        vino.ir_send(buttonmap[event.target.id],0)
+buttons = document.querySelectorAll(".remotebtn")
+
+for(var i=0; i<buttons.length; i++) {
+    buttons[i].addEventListener("click", function(event){
+        vino.ir_send(buttonmap[event.target.id],69)
     })
-})
+}
 
 vino.ir_enableCodeset(1);
 const activeUserSlot = vino.act_getCurrentSlotNo(); // The slot for the active user
